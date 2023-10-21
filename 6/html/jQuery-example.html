@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IF-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JQuery Example</title> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("div").click(function(){
+                    $(this).hide();
+                });
+
+                $(".mybtn").click(function(){
+                    alert("Hello guys!");
+                })
+
+                $("#chnDuLieu").click(function(){
+                    $("#result").html("<h3>Heading 3</h3>");
+                })
+            })
+        </script>
+    </head>
+
+    <body>
+        <div>Div 1</div>
+        <div>Div 2</div>
+        <div>Div 3</div>
+        <div>Div 4</div>
+        <div>Div 5</div>
+        <button class="mybtn" type="button">Hello</button>
+        <button id="chnDuLieu" type="button">Chèn</button>
+        <div id="result"></div>
+
+        
+    </body>
+</html>

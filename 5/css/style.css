@@ -1,0 +1,19 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+.hh-company{
+	font-family: Impact;
+	font-size: 35px;
+	text-shadow: 0 0 2px black;
+	position: absolute;
+	top: 45px;
+	padding-bottom: 2px;
+	border-bottom: 1px dotted gray;
+}
+
+.hh-slogan{
+	position: absolute;
+	top: 100px;
+}

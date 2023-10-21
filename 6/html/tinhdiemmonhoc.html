@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IF-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JavaScript Example</title> 
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <h1>TÍNH ĐIỂM MÔN HỌC</h1>
+        <form>
+            <div>
+                Điểm bài tập
+                <input type="number" id="dBT" min="0" max="10"><br>
+            </div>
+            <div>
+                Điểm giữa kỳ
+                <input type="number" id="dGK" min="0" max="10"><br>
+            </div>
+            <div>
+                Điểm cuối kỳ
+                <input type="number" id="dCK" min="0" max="10"><br>
+            </div>
+            <div>
+                Lớp
+                <select id="lop">
+                    <option value="COMP1303">Phát triển Ứng dụng Web</option>
+                    <option value="COMP1802">Thiết kế Web</option>
+                    <option value="COMP1803">Lập trình PHP</option>
+                </select>
+            </div>
+            <div>
+                <!-- <input type="button" value="Tính và xếp loại" onclick="xulyTinhToan()"> -->
+                <input type="button" value="Tính và xếp loại" id="mybtn">
+                
+            </div>
+            <div id="KetQua">
+            </div>
+        </form>
+
+
+        <!--JavaScript-->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            function xulyTinhToan(){
+                let diemBaiTap = parseFloat(document.getElementById("dBT").value);
+                let diemGiuaKy = parseFloat(document.getElementById("dGK").value);
+                let diemCuoiKy = parseFloat(document.getElementById("dCK").value);
+                let kq = (diemBaiTap * 0.2 + diemGiuaKy * 0.3 + diemCuoiKy * 0.5).toFixed(1);
+
+
+                // alert("Điểm của môn học là: " + kq);
+
+                //Xếp loại
+                let xepLoai = "";
+                if (kq >= 8.5){
+                    xepLoai = "A";
+                }
+                else if (kq >= 7.8){
+                    xepLoai = "B+";
+                }
+                else if (kq >= 7.0){
+                    xepLoai = "B";
+                }
+                else if (diemTongKet >= 6.3) {
+                    xepLoai = "C+";
+                } 
+                else if (diemTongKet >= 5.5) {
+                    xepLoai = "C";
+                }
+                document.getElementById("KetQua").innerHTML = "Điểm: " + kq + " ; Xếp loại: " + xepLoai;
+            }
+        </script> -->
+
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#mybtn").click(function(){
+                    let diemBaiTap = parseFloat(document.getElementById("dBT").value);
+                    let diemGiuaKy = parseFloat(document.getElementById("dGK").value);
+                    let diemCuoiKy = parseFloat(document.getElementById("dCK").value);
+                    let kq = (diemBaiTap * 0.2 + diemGiuaKy * 0.3 + diemCuoiKy * 0.5).toFixed(1);
+
+                    //alert("Điểm của môn học là: " + kq);
+
+                    let xepLoai = "";
+                    if (kq >= 8.5){
+                        xepLoai = "A";
+                    }
+                    else if (kq >= 7.8){
+                        xepLoai = "B+";
+                    }
+                    else if (kq >= 7.0){
+                        xepLoai = "B";
+                    }
+                    else if (diemTongKet >= 6.3) {
+                        xepLoai = "C+";
+                    } 
+                    else if (diemTongKet >= 5.5) {
+                        xepLoai = "C";
+                    }
+                    alert("Điểm của môn học: " + kq + "; Lớp: " + $("#lop").val() + "; Xếp loại: " + xepLoai);
+                })
+
+            })
+        </script>
+    </body>
+</html>

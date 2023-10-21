@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARO</title>
+    <script src="../Buoi06_14102023/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("td").css({
+                'border': '1px dotted blue', 'width': '75px',
+                'height': '75px', 'text-align': 'center'
+            });
+            $("#btnHide").click(function(){
+                $("#tblBanCo").hide(1000);
+            });
+            $("#btnShow").click(function () {
+                $("#tblBanCo").show(1000);
+            });
+            $("#btnToggle").click(function () {
+                $("#tblBanCo").toggle(1000);
+            });
+
+            let gt = "X";
+            $("td").click(function(){
+                if($(this).html() != "X" && $(this).html() != "O") {
+                    $(this).html(gt);
+                    gt = gt == "X" ? "O" : "X";
+                }
+            });
+        });        
+    </script>
+</head>
+<body>
+    <div class="container">
+        <button type="button" id="btnShow">Show</button>
+        <button type="button" id="btnHide">Hide</button>
+        <button type="button" id="btnToggle">Toggle</button>
+    </div>
+    <table id="tblBanCo">
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARO</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("td").css({
+                'border': '1px dotted blue', 'width': '75px',
+                'height': '75px', 'text-align': 'center'
+            });
+            $("#btnHide").click(function(){
+                $("#tblBanCo").hide(1000);
+            });
+            $("#btnShow").click(function () {
+                $("#tblBanCo").show(1000);
+            });
+            $("#btnToggle").click(function () {
+                $("#tblBanCo").toggle(1000);
+            });
+
+            let gt = "X";
+            $("td").click(function(){
+                if($(this).html() != "X" && $(this).html() != "O") {
+                    $(this).html(gt);
+                    gt = gt == "X" ? "O" : "X";
+                }
+            });
+        });        
+    </script>
+</head>
+<body>
+    <div class="container">
+        <button type="button" id="btnShow">Show</button>
+        <button type="button" id="btnHide">Hide</button>
+        <button type="button" id="btnToggle">Toggle</button>
+    </div>
+    <table id="tblBanCo">
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
